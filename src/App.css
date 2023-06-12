@@ -31,7 +31,7 @@ nav .container{
 .nav-link:hover{
     background-color: var(--main);
     border-radius: 5px;
-    color: var(--second-bg);
+    color: var(--White);
 }
 /*----Navbar end-----*/
 #About .row{
@@ -62,13 +62,34 @@ nav .container{
     color: var(--second-bg);
 }
 .about-image img{
-    width: 100%;
-    height: 100%;
+    max-width: 80%;
 }
+@media screen and (max-width: 992px) {
+    .about-text h1 {
+      font-size: 2.3rem;
+    }
+    .about-image img{
+        max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #About .row{
+        margin: 4rem 0;
+    }
+    .about-text{
+        margin-top: 50px;
+    }
+    .about-text h1 {
+        font-size: 2.8rem;
+      }
+    .about-image img{
+        max-width: 90%;
+    }
+  }
 
 @media screen and (max-width: 480px) {
     .about-image img{
-       margin-top: 3rem;
+       margin-top: 1rem;
     }
     .about-text h1 {
       font-size: 2.4rem;
@@ -102,12 +123,45 @@ nav .container{
     line-height: 30px;
 }
 .site-img img{
-    min-width: 100%;
+    max-width: 70%;
 }
 .btn{
     background-color: var(--second-bg);
     color: var(--White);
 }
+@media screen and (max-width: 992px) {
+    .site-text h1 {
+      font-size: 2.8rem;
+    }
+    .site-text h3 {
+        font-size: 1.5rem;
+      }
+      .site-text p{
+        color: var(--second-bg);
+        line-height: 25px;
+    }
+    .site-img img{
+        max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .site-text{
+        margin: 2rem 0;
+    }
+    .site-text h1 {
+        font-size: 3.2rem;
+      }
+      .site-text h3 {
+          font-size: 1.8rem;
+        }
+        .site-text p{
+          color: var(--second-bg);
+          line-height: 25px;
+      }
+      .site-img img{
+          max-width: 90%;
+      }
+  }
 @media screen and (max-width: 480px) {
     .site-text h1 {
       font-size: 2.5rem;
@@ -130,12 +184,12 @@ nav .container{
     justify-content: center;
 }
 #Services h1{
-    color: var(--blk);
+    color: var(--main);
     text-align: center;
     font-size: 4.5rem;
     font-weight: bold;
 }
-.card{
+#Services .card{
     background-color: var(--White);
     border-radius: 10px;
     color: var(--blk);
@@ -148,11 +202,16 @@ nav .container{
 .card:hover{
     transition-duration: .5s;
 }
+@media screen and (max-width: 992px) {
+    #Services h1 {
+      margin: 3rem 0;
+    }
+    
+  }
 @media screen and (max-width: 480px) {
     #Services h1 {
       margin: 3.5rem 0;
     }
-    
   }
 /*----services end-----*/
 /*----Team-----*/
@@ -165,7 +224,7 @@ nav .container{
     align-items: center;
 }
 #Team h1{
-    color: var(--blk);
+    color: var(--White);
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
@@ -206,29 +265,42 @@ nav .container{
     padding: 0 .4rem;
     color: var(--second-bg);
 }
+@media screen and (max-width: 992px) {
+    #Team h1{
+        margin: 3rem 0;
+    }
+    #Team .box-front{
+        margin: 1rem 4rem;
+    }
+  }
 @media screen and (max-width: 480px) {
     #Team .box-front{
-        margin-bottom: 50px;
+        margin: 20px;
     }
   }
 /*----Team end-----*/
 /*----Testimonials-----*/
 #Testimonials .card{
     background-color: var(--White);
-    padding: 1rem 0;
-    height: 15rem;
     margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 #Testimonials .row h1{
     color: var(--blk);
     text-align: center;
     font-weight: bolder;
     font-size: 3rem ;
+    margin: 5rem 0;
+    border-bottom: 5px solid var(--blk);
+}
+#Testimonials .card-text{
+    
 }
 .card-img{
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 50%;
 }
 .Footer{
@@ -236,9 +308,15 @@ nav .container{
     color: var(--White);
     background-color: var(--main);
 }
+@media screen and (max-width: 992px) {
+    #Testimonials .card{
+      margin: 1rem 0;
+    }
+    
+  }
 @media screen and (max-width: 480px) {
     #Testimonials .card{
-      margin: 0rem 0;
+      height: 10rem;
     }
     
   }

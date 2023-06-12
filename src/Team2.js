@@ -9,7 +9,7 @@ function Testimonials() {
         <div className="container">
           <div className="row">
             <h1>My Team</h1>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-sm-6">
               <div className="box-front">
                 <div className="box-img">
                   <img src={s1} alt="..." />
@@ -29,7 +29,7 @@ function Testimonials() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-sm-6">
               <div className="box-front">
                 <div className="box-img">
                   <img src={s2} alt="..." />
@@ -49,7 +49,7 @@ function Testimonials() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-sm-6">
               <div className="box-front">
                 <div className="box-img">
                   <img src={s3} alt="..." />

@@ -14,32 +14,42 @@ function Team() {
           >
             <div className="row">
               <h1>What Coustmers Say</h1>
-              <div className="col-md-6 col-lg-4 mb-5 mb-md-0 gx-5">
+              <div className="col-md-6 col-lg-4">
                 <div className="card">
-                  <img src={s1} className="card-img" alt="#" />
                   <div className="card-body">
-                    <h5 className="card-title">Ansh</h5>
-                    <p className="card-text">
-                      I have tried some clothes there it so good experience .
+                    <img src={s1} className="card-img" alt="#" />
+                  </div>
+                  <div className="card-text">
+                    <h5>Ansha</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Doloremque, libero..
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 mb-5 mb-md-0 gx-5">
+              <div className="col-md-6 col-lg-4">
                 <div className="card">
-                  <img src={s2} className="card-img" alt="#" />
                   <div className="card-body">
-                    <h5 className="card-title">Sweta</h5>
-                    <p className="card-text">.</p>
+                    <img src={s2} className="card-img" alt="#" />
+                  </div>
+                  <div className="card-text">
+                    <h5>Sweta</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Labore, accusamus.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 mb-5 mb-md-0 gx-5">
+              <div className="col-md-6 col-lg-4">
                 <div className="card">
-                  <img src={s3} className="card-img" alt="#" />
                   <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">
+                    <img src={s3} className="card-img" alt="#" />
+                  </div>
+                  <div className="card-text">
+                    <h5>Carde</h5>
+                    <p>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
