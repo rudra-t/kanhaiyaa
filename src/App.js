@@ -14,6 +14,7 @@ function App() {
       <Site />
       <Services />
       <Team2 />
+      <Footer2 />
     </>
   );
 }

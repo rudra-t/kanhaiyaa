@@ -62,7 +62,7 @@ nav .container{
     color: var(--second-bg);
 }
 .about-image img{
-    max-width: 80%;
+    max-width: 60%;
 }
 @media screen and (max-width: 992px) {
     .about-text h1 {
