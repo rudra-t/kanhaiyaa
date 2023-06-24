@@ -21,22 +21,22 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link px-3" href="#Site">
+                <a className="nav-link active" href="#Site">
                   Site
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-3" href="#Services">
+                <a className="nav-link" href="#Services">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-3" href="#Team">
+                <a className="nav-link" href="#Team">
                   Team
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-3" href="#Testimonials">
+                <a className="nav-link" href="#Testimonials">
                   Testimonials
                 </a>
               </li>

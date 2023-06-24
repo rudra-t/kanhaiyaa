@@ -6,10 +6,13 @@
     text-decoration: None;
 }
 :root{
-    --main:#7076FE;
-    --blk:#4B556B;
-    --White:#F9F9F9;
-    --second-bg:#6c757d;
+    --main: #191d28;
+    --blk:#f0083f;
+    --White:#fff;
+    --second-bg:#1e222d;
+}
+body{
+    background-color: var(--main);
 }
 /*----Navbar start-----*/
 nav .container{
@@ -17,21 +20,20 @@ nav .container{
     min-height: 5vh;
 }
 .navbar-brand{
-    color: var(--blk);
+    color: var(--White);
 }
 .navbar-toggler-icon{
-    color: var(--blk);
+    color: var(--White);
     padding: 5px;
 }
 .nav-link{
-    color: var(--blk);
+    color: var(--White);
     text-align: center;
-    padding: 10px;
+    margin: 0 2rem;
 }
 .nav-link:hover{
-    background-color: var(--main);
-    border-radius: 5px;
-    color: var(--White);
+    border-bottom: 2px solid var(--blk);
+    color: var(--blk);
 }
 /*----Navbar end-----*/
 #About .row{
@@ -40,7 +42,7 @@ nav .container{
     justify-content: center;
 }
 .about-text h1{
-    color: var(--main);
+    color: var(--blk);
     font-size: 3.5rem;
     font-weight: bold;
     margin: 15px 0;
@@ -50,19 +52,24 @@ nav .container{
     color: var(--blk);
 }
 .about-text h2{
-    color: var(--blk);
+    color: var(--White);
 }
 .about-text p{
-    color: var(--second-bg);
+    color: var(--White);
     line-height: 30px;
 }
 .social-links i{
-    padding: 0 15px;
-    font-size: 1.5rem;
-    color: var(--second-bg);
+    padding: 0 20px;
+    font-size: 1.8rem;
+    color: var(--White);
+    margin-top: 2rem;
+}
+.about-image{
+    display: flex;
+    justify-content: center;
 }
 .about-image img{
-    max-width: 60%;
+    max-width: 70%;
 }
 @media screen and (max-width: 992px) {
     .about-text h1 {
@@ -97,36 +104,37 @@ nav .container{
     .social-links i{
         padding: 0 10px;
         font-size: 1.5rem;
-        color: var(--second-bg);
         margin-top: 0;
+        margin-top: 20px;
     }
   }
 /*---------------------------------site-------------------------------------------*/
 #Site .row{
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .site-text h1{
     font-size: 4rem;
-    color: var(--main);
+    color: var(--White);
     font-weight: bolder;
 }
 .site-text span{
-    color: var(--main);
-}
-.site-text h3{
     color: var(--blk);
 }
+.site-text h3{
+    color: var(--White);
+}
 .site-text p{
-    color: var(--second-bg);
+    color: var(--White);
     line-height: 30px;
 }
 .site-img img{
-    max-width: 70%;
+    max-width: 100%;
+    animation: 3s linear infinite;
 }
 .btn{
-    background-color: var(--second-bg);
+    background-color: var(--blk);
     color: var(--White);
 }
 @media screen and (max-width: 992px) {
@@ -136,10 +144,6 @@ nav .container{
     .site-text h3 {
         font-size: 1.5rem;
       }
-      .site-text p{
-        color: var(--second-bg);
-        line-height: 25px;
-    }
     .site-img img{
         max-width: 100%;
     }
@@ -154,10 +158,6 @@ nav .container{
       .site-text h3 {
           font-size: 1.8rem;
         }
-        .site-text p{
-          color: var(--second-bg);
-          line-height: 25px;
-      }
       .site-img img{
           max-width: 90%;
       }
@@ -165,73 +165,72 @@ nav .container{
 @media screen and (max-width: 480px) {
     .site-text h1 {
       font-size: 2.5rem;
+      margin: 20px 0;
     }
-    .site-text h4 {
+    .site-text h3 {
         font-size: 1.3rem;
       }
-      .site-text p{
-        color: var(--second-bg);
-        line-height: 25px;
-    }
   }
 /*----------------------------site end----------------------------------------*/
 
 /*----About end-----*/
 /*----Services-----*/
-#Services .row{
+#Services{
     min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#Services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
 }
 #Services h1{
-    color: var(--main);
+    color: var(--blk);
     text-align: center;
     font-size: 4.5rem;
     font-weight: bold;
 }
-#Services .card{
-    background-color: var(--White);
+.service-box{
+    border: 1px solid var(--blk);
     border-radius: 10px;
-    color: var(--blk);
+    color: var(--White);
     text-align: center; 
+    background-color: var(--main);
 }
 .fas{
     font-size: 2rem;
     padding: 1rem;
+    color: var(--blk);
 }
-.card:hover{
-    transition-duration: .5s;
-}
-@media screen and (max-width: 992px) {
-    #Services h1 {
-      margin: 3rem 0;
-    }
-    
-  }
 @media screen and (max-width: 480px) {
     #Services h1 {
       margin: 3.5rem 0;
     }
+    .service-box{
+        margin: 0 30px;
+    }
   }
 /*----services end-----*/
 /*----Team-----*/
-#Team{
-    background-color: var(--main);
-}
-#Team .row{
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+#Team .container{
+    display: grid;
+    padding: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    padding: 5rem 0;
 }
 #Team h1{
     color: var(--White);
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
+    margin: 5rem 0;
 }
-#Team .box-front{
-    color: var(--second-bg);
-    background-color: var(--White);
+.team-box{
+    color: var(--blk);
+    background-color: var(--second-bg);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -239,12 +238,12 @@ nav .container{
     align-items: center;
     padding: 10px;
     text-align: center;
-    border: solid var(--second-bg) 1px;
 }
 .box-img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border: 3px solid var(--blk);
+    max-width: 150px;
+    max-height: 150px;
     background: var(--second-bg);
     padding: 3px;
 }
@@ -256,26 +255,24 @@ nav .container{
 }
 .box-txt h3{
     margin: 20px 0;
+    color: var(--White);
 }
 .box-txt h5{
     margin: 20px 0;
+    color: var(--White);
 }
 .fa-brands{
     font-size: 1.2rem;
     padding: 0 .4rem;
-    color: var(--second-bg);
+    color: var(--White);
 }
 @media screen and (max-width: 992px) {
     #Team h1{
         margin: 3rem 0;
-    }
-    #Team .box-front{
-        margin: 1rem 4rem;
-    }
-  }
+    }}
 @media screen and (max-width: 480px) {
-    #Team .box-front{
-        margin: 20px;
+    .team-box{
+        margin:  0 50px;
     }
   }
 /*----Team end-----*/
@@ -294,9 +291,6 @@ nav .container{
     font-size: 3rem ;
     margin: 5rem 0;
     border-bottom: 5px solid var(--blk);
-}
-#Testimonials .card-text{
-    
 }
 .card-img{
     max-width: 150px;
@@ -322,4 +316,57 @@ nav .container{
   }
   /*----Team end-----*/
 /*----Testimonials end-----*/
+/*----Footer-----*/
+#Contact{
+    background-color: var(--second-bg);
+}
+#Contact .headings h1{
+    color: var(--White);
+    margin: 20px 0;
+    font-size: 3rem;
+}
+.contact-btn a{
+    color: var(--White);
+    text-decoration: none;
+    background-color: var(--main);
+    padding: 10px;
+    border-radius: 10px;
+}
+.heading2{
+    min-height: 50vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-clr);
+}
+.social-link i{
+    font-size: 30px;
+    margin: 30px 20px;
+    color: var(--White);
+}
+.heading2 p{
+    font-size: 15px;
+    color: var(--White);
+}
+@media(max-width:992px){
+    #Contact .headings h1{
+        font-size: 2.3rem;
+    }
+}
+@media(max-width:768px){
+    #Contact{
+        margin-top: 0rem;
+    }
+    .social-link i{
+        font-size: 20px;
+        margin:20px;
+        color: var(--White);
+    }
+    .heading2 p{
+        font-size: 15px;
+        color: var(--White);
+    }
+    
+}
 

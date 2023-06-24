@@ -1,5 +1,5 @@
 import React from "react";
-import blob from "./im/blob.svg";
+import edu from "./im/edu.svg";
 function Home() {
   return (
     <>
@@ -8,7 +8,7 @@ function Home() {
           <div className="row">
             <div className="col-md-6">
               <div className="site-img">
-                <img src={blob}></img>
+                <img src={edu}></img>
               </div>
             </div>
             <div className="col-md-6">
