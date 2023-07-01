@@ -7,7 +7,9 @@ function About() {
         <div className="row">
           <div className="col-md-6 about-text">
             <h2>About Me</h2>
-            <h1>Hello,I'm SHISHIR PANDEY</h1>
+            <h1>
+              Hello,I'm <span>SHISHIR PANDEY</span>
+            </h1>
             <h2>
               Co-Founder Of <span>Outlooks Fashion Zone</span>
             </h2>

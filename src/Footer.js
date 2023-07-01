@@ -4,6 +4,7 @@ function Footer() {
     <>
       <section id="Contact">
         <div>
+          <h1>For More Information Reach Me Out</h1>
           <div className="heading2">
             <div className="social-link">
               <a className="" href="#">

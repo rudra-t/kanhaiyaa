@@ -7,16 +7,9 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="site-img">
-                <img src={edu}></img>
-              </div>
-            </div>
-            <div className="col-md-6">
               <div className="site-text">
                 <h3>My initiative towards quality fashion service.</h3>
-                <h1>
-                  <span>Outlooks Fashion Zone</span>
-                </h1>
+                <h1>Outlooks Fashion Zone</h1>
                 <p>
                   Everyone wants
                   <b>
@@ -39,6 +32,11 @@ function Home() {
                 <a className="btn" href="#Services">
                   MY SITE
                 </a>
+              </div>
+            </div>
+            <div className="col-md-6 order-md-first">
+              <div className="site-img">
+                <img src={edu}></img>
               </div>
             </div>
           </div>

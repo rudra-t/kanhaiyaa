@@ -47,9 +47,13 @@ nav .container{
     font-weight: bold;
     margin: 15px 0;
 }
-.about-text span{
+.about-text h1 span{
+    color: var(--White);
+}
+.about-text h2 span{
     font-weight: bolder;
     color: var(--blk);
+    font-size: 40px;
 }
 .about-text h2{
     color: var(--White);
@@ -84,7 +88,7 @@ nav .container{
         margin: 4rem 0;
     }
     .about-text{
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .about-text h1 {
         font-size: 2.8rem;
@@ -97,6 +101,9 @@ nav .container{
 @media screen and (max-width: 480px) {
     .about-image img{
        margin-top: 1rem;
+    }
+    .about-text{
+        margin-top: 0;
     }
     .about-text h1 {
       font-size: 2.4rem;
@@ -116,11 +123,8 @@ nav .container{
 }
 .site-text h1{
     font-size: 4rem;
-    color: var(--White);
-    font-weight: bolder;
-}
-.site-text span{
     color: var(--blk);
+    font-weight: bolder;
 }
 .site-text h3{
     color: var(--White);
@@ -128,6 +132,7 @@ nav .container{
 .site-text p{
     color: var(--White);
     line-height: 30px;
+    margin-bottom: 30px;
 }
 .site-img img{
     max-width: 100%;
@@ -136,19 +141,24 @@ nav .container{
 .btn{
     background-color: var(--blk);
     color: var(--White);
+    padding:  5px 15px;
+    font-size: 17px
 }
 @media screen and (max-width: 992px) {
     .site-text h1 {
-      font-size: 2.8rem;
+      font-size: 3.4rem;
     }
     .site-text h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
     .site-img img{
         max-width: 100%;
     }
   }
   @media screen and (max-width: 768px){
+    #Site .row{
+        margin-bottom: 5rem;
+    }
     .site-text{
         margin: 2rem 0;
     }
@@ -168,7 +178,7 @@ nav .container{
       margin: 20px 0;
     }
     .site-text h3 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
       }
   }
 /*----------------------------site end----------------------------------------*/
@@ -198,11 +208,20 @@ nav .container{
     color: var(--White);
     text-align: center; 
     background-color: var(--main);
+    transition: .5s;
+}
+.service-box:hover{
+    transform: scale(1.1);
 }
 .fas{
     font-size: 2rem;
     padding: 1rem;
     color: var(--blk);
+}
+@media screen and (max-width: 768px){
+    #Services h1{
+        margin-bottom: 2rem;
+    }
 }
 @media screen and (max-width: 480px) {
     #Services h1 {
@@ -238,6 +257,10 @@ nav .container{
     align-items: center;
     padding: 10px;
     text-align: center;
+    transition: .5s;
+}
+.team-box:hover{
+    transform: scale(.7);
 }
 .box-img{
     border-radius: 50%;
@@ -262,14 +285,20 @@ nav .container{
     color: var(--White);
 }
 .fa-brands{
-    font-size: 1.2rem;
-    padding: 0 .4rem;
+    font-size: 1.4rem;
+    padding: .3rem .6rem;
     color: var(--White);
 }
 @media screen and (max-width: 992px) {
     #Team h1{
         margin: 3rem 0;
-    }}
+    }
+}
+@media screen and (max-width: 768px){
+    #Team h1{
+         margin-bottom: 0rem;
+    }
+}
 @media screen and (max-width: 480px) {
     .team-box{
         margin:  0 50px;
@@ -320,6 +349,11 @@ nav .container{
 #Contact{
     background-color: var(--second-bg);
 }
+#Contact h1{
+    text-align: center;
+    color: var(--White);
+    padding: 30px 0;
+}
 #Contact .headings h1{
     color: var(--White);
     margin: 20px 0;
@@ -333,7 +367,7 @@ nav .container{
     border-radius: 10px;
 }
 .heading2{
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -341,12 +375,16 @@ nav .container{
     background-color: var(--primary-clr);
 }
 .social-link i{
-    font-size: 30px;
-    margin: 30px 20px;
+    font-size: 35px;
+    margin: 30px;
     color: var(--White);
+    transition: 1s;
+}
+.social-link i:hover{
+    transform: scale(1.5);
 }
 .heading2 p{
-    font-size: 15px;
+    font-size: 20px;
     color: var(--White);
 }
 @media(max-width:992px){
@@ -359,14 +397,24 @@ nav .container{
         margin-top: 0rem;
     }
     .social-link i{
-        font-size: 20px;
+        font-size: 40px;
         margin:20px;
         color: var(--White);
     }
     .heading2 p{
-        font-size: 15px;
+        font-size: 20px;
         color: var(--White);
     }
-    
+}
+@media(max-width:480px){
+    .social-link i{
+        font-size: 30px;
+        margin:20px;
+        color: var(--White);
+    }
+    .heading2 p{
+        font-size: 17px;
+        color: var(--White);
+    }
 }
 

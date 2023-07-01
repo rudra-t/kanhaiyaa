@@ -35,11 +35,6 @@ function Navbar() {
                   Team
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#Testimonials">
-                  Testimonials
-                </a>
-              </li>
             </ul>
           </div>
         </div>
